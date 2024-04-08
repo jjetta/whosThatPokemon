@@ -1,0 +1,49 @@
+
+
+
+
+<div class="menu">
+    
+    <select [ngModel]="listSize" (ngModelChange)="setListSize($event)">
+        <option [value]="12">12</option>
+        <option [value]="24">24</option>
+        <option [value]="36">36</option>
+        <option [value]="48">48</option>
+        <option [value]="60">60</option>
+    </select>
+    <p>pokemon per page</p>
+    
+</div>
+
+<div class="search">
+    <input (keydown.enter)="searchPokemon(pokemonName.value)" (input)="suggestPokemon(pokemonName.value)" type="text" placeholder="search" #pokemonName/>
+    <div class="dropdown">
+        <li *ngFor="let name of this.filtered">
+            {{name}}
+        </li>
+    </div>
+    <button (click)="searchPokemon(pokemonName.value)">go</button>
+</div>
+
+
+
+<div class="grid-container">
+    <div class="poke" *ngFor="let pokemon of pokemon$ | async" >
+      <a [routerLink]="['/',pokemon.name]" (click)="selectSound()">
+      <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{pokemon.id}}.png">
+      <br>
+      <h3>{{pokemon.name}}</h3></a>
+      </div>
+  </div>
+  
+  
+<div>
+    <div class = "pageNum">
+        {{this.pageOffset + 1}} - {{this.pageOffset + this.listSize}} / {{this.count}}
+    </div>
+    <button *ngIf="this.pageOffset != 0" class="prevButton" (click)="prevPage()">prev</button> 
+    <button class="nextButton" (click)="nextPage()">next</button>
+</div>
+
+
+  
