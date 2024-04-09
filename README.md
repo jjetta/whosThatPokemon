@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## How to Run:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files. \n PRO TIP!: If you run `ng serve -o` it will automatically navigate to the site!
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files. <br> PRO TIP!: If you run `ng serve -o` it will automatically navigate to the site!
 
 
 
