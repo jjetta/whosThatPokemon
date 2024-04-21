@@ -1,27 +1,17 @@
-# PokeApp
+# whosThatPokemon
 
+Welcome! This was a nice little project I made last summer during my internship! I just remade the repository because the last one was only a zip file and you couldn't see the code.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+(Note* you may have to run npm install initially!)
 
-## Development server
+# Project Info:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+I'm pretty sure 99.9% of you reading this have watch Pokemon growing up, or have at least heard of it! This is basically a makeshift podedex from scratch written in Angular. It makes calls to the PokeAPI (link: https://pokeapi.co/) for the data the responses populate the pokedex cards! 
 
-## Code scaffolding
+# How to Run:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files. <br> PRO TIP!: If you run `ng serve -o` it will automatically navigate to the site!
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
