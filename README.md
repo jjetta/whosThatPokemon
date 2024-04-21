@@ -6,7 +6,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Project Info:
 
-I'm pretty sure 99.9% of you reading this have watch Pokemon growing up, or have at least heard of it! This is basically a makeshift podedex from scratch written in Angular. It makes calls to the PokeAPI (link: https://pokeapi.co/) for the data the responses populate the pokedex cards! 
+I'm pretty sure 99.9% of you reading this have watch Pokemon growing up, or have at least heard of it! This is basically a makeshift podedex from scratch written in Angular. It makes calls to PokeAPI (link: https://pokeapi.co/) for the data and the responses populates the pokedex cards! 
 
 # How to Run:
 
