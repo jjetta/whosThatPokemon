@@ -10,6 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./pokemon-list.component.scss']
 })
 
+
 export class PokemonListComponent{
   public pokemon$: Observable<Pokemon[]>;
   public listSize : number = 12;

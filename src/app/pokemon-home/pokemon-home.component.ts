@@ -18,9 +18,12 @@ export class PokemonHomeComponent implements OnInit{
     this.whoSound()
   }
 
+  //function called when start button on home page is called 
   start(){
     this.loadUpSound()
     this.menuSound()
+
+    //navigate to the list component
     this.router.navigate(['list'])
   }
 
