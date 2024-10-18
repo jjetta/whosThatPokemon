@@ -1,9 +1,7 @@
 
-
-
-
 <div class="menu">
-    
+
+    <p>pokemon per page</p>
     <select [ngModel]="listSize" (ngModelChange)="setListSize($event)">
         <option [value]="12">12</option>
         <option [value]="24">24</option>
@@ -11,8 +9,7 @@
         <option [value]="48">48</option>
         <option [value]="60">60</option>
     </select>
-    <p>pokemon per page</p>
-    
+
 </div>
 
 <div class="search">
@@ -35,15 +32,15 @@
       <h3>{{pokemon.name}}</h3></a>
       </div>
   </div>
-  
-  
+
+
 <div>
     <div class = "pageNum">
         {{this.pageOffset + 1}} - {{this.pageOffset + this.listSize}} / {{this.count}}
     </div>
-    <button *ngIf="this.pageOffset != 0" class="prevButton" (click)="prevPage()">prev</button> 
+    <button *ngIf="this.pageOffset != 0" class="prevButton" (click)="prevPage()">prev</button>
     <button class="nextButton" (click)="nextPage()">next</button>
 </div>
 
 
-  
+
